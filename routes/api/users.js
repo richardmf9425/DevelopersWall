@@ -10,6 +10,8 @@ const config = require('config');
 //route POST api/users
 //desc  Register User
 //access Public
+
+// User Signup
 router.post(
 	'/',
 	[

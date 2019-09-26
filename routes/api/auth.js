@@ -22,6 +22,8 @@ router.get('/', auth, async (req, res) => {
 //route POST api/auth
 //desc user auth and return token
 //access Public
+
+//User Login Check
 router.post(
 	'/',
 	[
