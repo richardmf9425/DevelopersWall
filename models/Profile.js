@@ -93,9 +93,6 @@ const ProfileSchema = new mongoose.Schema({
 		}
 	],
 	links: {
-		youtube: {
-			type: String
-		},
 		twitter: {
 			type: String
 		},
