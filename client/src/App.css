@@ -18,7 +18,8 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #000;
+  ;
   color: #333;
 }
 
@@ -361,8 +362,35 @@ button {
 .landing {
   position: relative;
   background: url('./img/showcase.jpg') no-repeat center center/cover;
-  height: 50vh;
+  height: 60vh;
+  transform-origin: right bottom;
+  transform: skewY(-2deg);
 }
+
+.about-section {
+  background-color: var(--primary-color);
+  height: 70vh;
+  color: white;
+}
+
+.about-section .about-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-section .about-inner .about-header {
+  font-size: 4rem;
+  padding-top: 6rem;
+}
+
+.about-section .about-inner .about-content {
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+
 
 .landing-inner {
   color: #fff;
@@ -374,6 +402,8 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
+  transform: skewY(3deg);
+
 }
 
 /* Profiles Page */
