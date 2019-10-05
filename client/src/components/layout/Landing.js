@@ -6,15 +6,13 @@ const Landing = () => {
 			<div className="dark-overlay">
 				<div className="landing-inner">
 					<h1 className="x-large">Developers Wall</h1>
-					<p className="lead">
-						Create a developer profile/portfolio, share posts and get help from other developers
-					</p>
+					<p className="lead">Don't search for jobs. Let them search for you</p>
 					<div className="buttons">
 						<a href="register.html" className="btn btn-primary">
 							Sign Up
 						</a>
 						<a href="login.html" className="btn btn-light">
-							Login
+							Log In
 						</a>
 					</div>
 				</div>
