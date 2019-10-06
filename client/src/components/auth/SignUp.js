@@ -45,9 +45,7 @@ const SignUp = () => {
 							onChange={(e) => onChange(e)}
 							required
 						/>
-						<small className="form-text">
-							This site uses Gravatar so if you want a profile image, use a Gravatar email
-						</small>
+						<small className="form-text">This website uses Gravatars</small>
 					</div>
 					<div className="form-group">
 						<input
