@@ -153,10 +153,16 @@ img {
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
   border: none;
+  border-radius: .25rem;
   cursor: pointer;
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
 }
 
 .badge {
