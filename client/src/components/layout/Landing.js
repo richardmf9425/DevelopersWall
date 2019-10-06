@@ -10,10 +10,10 @@ const Landing = () => {
 						<h1 className="x-large">Developers Wall</h1>
 						<p className="lead">Don't search for jobs. Let them search for you</p>
 						<div className="buttons">
-							<Link to="/signup" className="btn btn-primary">
+							<Link to="/signup" className="btn btn-primary uppercase">
 								Sign Up
 							</Link>
-							<Link to="/login" className="btn btn-light">
+							<Link to="/login" className="btn btn-light uppercase">
 								Log In
 							</Link>
 						</div>

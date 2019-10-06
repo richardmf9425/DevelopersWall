@@ -146,8 +146,13 @@ img {
   margin: 3rem 0;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .btn {
   display: inline-block;
+
   background: var(--light-color);
   color: #333;
   padding: 0.4rem 1.3rem;
@@ -164,6 +169,8 @@ img {
   display: flex;
   justify-content: center;
 }
+
+
 
 .badge {
   font-size: 0.8rem;

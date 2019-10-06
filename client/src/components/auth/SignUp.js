@@ -70,7 +70,7 @@ const SignUp = () => {
 						/>
 					</div>
 					<div className="btn-center">
-						<input type="submit" className="btn btn-primary" value="Sign Up" />
+						<input type="submit" className="btn btn-primary uppercase" value="Sign Up" />
 					</div>
 				</form>
 				<p className="my-1">

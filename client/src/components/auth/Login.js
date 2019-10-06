@@ -43,7 +43,7 @@ const Login = () => {
 						/>
 					</div>
 					<div className="btn-center">
-						<input type="submit" className="btn btn-primary" value="Log In" />
+						<input type="submit" className="btn btn-primary uppercase" value="Log In" />
 					</div>
 				</form>
 				<p className="my-1">
