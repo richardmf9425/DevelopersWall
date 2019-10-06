@@ -21,7 +21,7 @@ const Landing = () => {
 				</div>
 			</section>
 			<section className="about-section">
-				<div className="about-inner">
+				<div className="about-inner-top">
 					<h1 className="about-header">About</h1>
 					<div className="about-content">
 						<p>
@@ -32,6 +32,7 @@ const Landing = () => {
 						</p>
 					</div>
 				</div>
+				<div className="about-inner-down" />
 			</section>
 		</Fragment>
 	);
