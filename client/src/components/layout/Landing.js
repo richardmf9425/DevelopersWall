@@ -34,6 +34,34 @@ const Landing = () => {
 				</div>
 				<div className="about-inner-down" />
 			</section>
+			<section className="mission-section">
+				<div className="mission-inner-top">
+					<h1 className="mission-header">Mission</h1>
+					<div className="mission-content">
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt libero aliquid corporis
+							modi odit, veniam officiis ducimus illo error, ad cupiditate dicta enim possimus, quaerat
+							accusantium quo provident quis commodi architecto explicabo sed eveniet. Culpa ea voluptatem
+							eveniet amet possimus?
+						</p>
+					</div>
+				</div>
+				<div className="mission-inner-down" />
+			</section>
+			<section className="contact-section">
+				<div className="contact-inner-top">
+					<h1 className="contact-header">Contact</h1>
+					<div className="contact-content">
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt libero aliquid corporis
+							modi odit, veniam officiis ducimus illo error, ad cupiditate dicta enim possimus, quaerat
+							accusantium quo provident quis commodi architecto explicabo sed eveniet. Culpa ea voluptatem
+							eveniet amet possimus?
+						</p>
+					</div>
+				</div>
+				<div className="contact-inner-down" />
+			</section>
 		</Fragment>
 	);
 };
