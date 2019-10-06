@@ -269,6 +269,14 @@ img {
 
 }
 
+.form-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
 .form .form-text {
   display: block;
   margin-top: 0.3rem;
@@ -284,8 +292,9 @@ img {
   display: block;
   width: 100%;
   padding: 0.4rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border: 1px solid #ccc;
+  border-radius: .25rem;
 }
 
 .form input[type='submit'],
@@ -416,12 +425,7 @@ button {
 
 /* Sign Up Page */
 
-.signup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
 
 /* Profiles Page */
 

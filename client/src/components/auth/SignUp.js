@@ -20,7 +20,7 @@ const SignUp = () => {
 	};
 	return (
 		<Fragment>
-			<div className="signup">
+			<div className="form-center">
 				<h1 className="large text-primary">Sign Up</h1>
 				<p className="lead">
 					<i className="fas fa-user" /> Create Your Account

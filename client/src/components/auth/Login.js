@@ -15,7 +15,7 @@ const Login = () => {
 	};
 	return (
 		<Fragment>
-			<div className="signup">
+			<div className="form-center">
 				<h1 className="large text-primary">Log In</h1>
 				<p className="lead">
 					<i className="fas fa-user" /> Log Into Your Account
