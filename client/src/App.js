@@ -9,6 +9,7 @@ import store from './store';
 import Alert from './components/layout/Alert';
 
 import './App.css';
+import Footer from './components/layout/Footer';
 
 function App() {
 	return (
@@ -24,6 +25,7 @@ function App() {
 							<Route exact path="/login" component={Login} />
 						</Switch>
 					</section>
+					<Footer />
 				</Fragment>
 			</Router>
 		</Provider>
