@@ -8,10 +8,9 @@ import Footer from './components/layout/Footer';
 import { Provider } from 'react-redux';
 import store from './store';
 import Alert from './components/layout/Alert';
-
-import './App.css';
 import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
+import './App.css';
 
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
@@ -20,7 +19,7 @@ if (localStorage.token) {
 function App() {
 	useEffect(() => {
 		store.dispatch(loadUser());
-	});
+	}, []);
 
 	return (
 		<Provider store={store}>
