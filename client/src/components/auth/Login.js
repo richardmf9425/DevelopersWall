@@ -1,10 +1,10 @@
 import React, { Fragment, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { login } from '../../actions/auth';
 import { PropTypes } from 'prop-types';
 
-const Login = ({ login }) => {
+const Login = ({ login, isAuthenticated }) => {
 	const [ formInfo, setFormInfo ] = useState({
 		email: '',
 		password: ''
@@ -15,6 +15,10 @@ const Login = ({ login }) => {
 		e.preventDefault();
 		login(email, password);
 	};
+
+	if (isAuthenticated) {
+		return <Redirect to="/dashboard" />;
+	}
 	return (
 		<Fragment>
 			<div className="form-center">
@@ -59,7 +63,12 @@ const Login = ({ login }) => {
 };
 
 Login.propTypes = {
-	login: PropTypes.func.isRequired
+	login: PropTypes.func.isRequired,
+	isAuthenticated: PropTypes.bool
 };
 
-export default connect(null, { login })(Login);
+const mapStateToProps = (state) => ({
+	isAuthenticated: state.auth.isAuthenticated
+});
+
+export default connect(mapStateToProps, { login })(Login);
