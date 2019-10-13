@@ -74,8 +74,8 @@ const SignUp = ({ setAlert, signup }) => {
 						/>
 					</div>
 					<div className="btn-center">
-						<button className="btn btn-primary uppercase">
-							SIGN UP <i className="fas fa-chevron-right" />
+						<button className="btn btn-primary uppercase ">
+							SIGN UP <i className="fas fa-chevron-right icon-padding" />
 						</button>
 					</div>
 				</form>

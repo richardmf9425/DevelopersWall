@@ -21,6 +21,7 @@ export const loadUser = () => async (dispatch) => {
 	}
 };
 
+// User SignUp
 export const signup = ({ name, email, password }) => async (dispatch) => {
 	const config = {
 		headers: {

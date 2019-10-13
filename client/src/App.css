@@ -234,6 +234,12 @@ img {
 	margin: 1.5rem 0;
 }
 
+/* Icons */
+
+.icon-padding {
+	padding-left: 0.5rem;
+}
+
 /* Overlay */
 
 .dark-overlay {

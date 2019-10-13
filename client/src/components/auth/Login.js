@@ -44,7 +44,7 @@ const Login = () => {
 					</div>
 					<div className="btn-center">
 						<button className="btn btn-primary uppercase">
-							LOG IN <i className="fas fa-chevron-right" />
+							LOG IN <i className="fas fa-chevron-right icon-padding" />
 						</button>
 					</div>
 				</form>
