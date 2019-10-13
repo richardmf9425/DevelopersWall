@@ -27,7 +27,7 @@ const SignUp = ({ setAlert, signup }) => {
 			<div className="form-center">
 				<h1 className="large text-primary">Sign Up</h1>
 				<p className="lead">
-					<i className="fas fa-user" /> Create Your Account
+					<i className="fas fa-user-plus" /> Create Your Account
 				</p>
 				<form className="form" onSubmit={(e) => onSubmit(e)}>
 					<div className="form-group">
@@ -74,7 +74,9 @@ const SignUp = ({ setAlert, signup }) => {
 						/>
 					</div>
 					<div className="btn-center">
-						<input type="submit" className="btn btn-primary uppercase" value="Sign Up" />
+						<button className="btn btn-primary uppercase">
+							SIGN UP <i className="fas fa-chevron-right" />
+						</button>
 					</div>
 				</form>
 				<p className="my-1">

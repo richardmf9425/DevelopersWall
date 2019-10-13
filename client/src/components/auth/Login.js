@@ -43,7 +43,9 @@ const Login = () => {
 						/>
 					</div>
 					<div className="btn-center">
-						<input type="submit" className="btn btn-primary uppercase" value="Log In" />
+						<button className="btn btn-primary uppercase">
+							LOG IN <i className="fas fa-chevron-right" />
+						</button>
 					</div>
 				</form>
 				<p className="my-1">
