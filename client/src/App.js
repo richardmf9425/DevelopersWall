@@ -5,9 +5,10 @@ import Landing from './components/layout/Landing';
 import Login from './components/auth/Login';
 import SignUp from './components/auth/SignUp';
 import Footer from './components/layout/Footer';
+import Alert from './components/layout/Alert';
+import Dashboard from './components/dashboard/Dashboard';
 import { Provider } from 'react-redux';
 import store from './store';
-import Alert from './components/layout/Alert';
 import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 import './App.css';
@@ -32,6 +33,7 @@ function App() {
 						<Switch>
 							<Route exact path="/signup" component={SignUp} />
 							<Route exact path="/login" component={Login} />
+							<Route exact path="/dashboard" component={Dashboard} />
 						</Switch>
 					</section>
 					<Footer />
