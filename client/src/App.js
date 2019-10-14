@@ -7,6 +7,7 @@ import SignUp from './components/auth/SignUp';
 import Footer from './components/layout/Footer';
 import Alert from './components/layout/Alert';
 import Dashboard from './components/dashboard/Dashboard';
+import PrivateRoute from './components/routing/PrivateRoute';
 import { Provider } from 'react-redux';
 import store from './store';
 import { loadUser } from './actions/auth';
@@ -33,7 +34,7 @@ function App() {
 						<Switch>
 							<Route exact path="/signup" component={SignUp} />
 							<Route exact path="/login" component={Login} />
-							<Route exact path="/dashboard" component={Dashboard} />
+							<PrivateRoute exact path="/dashboard" component={Dashboard} />
 						</Switch>
 					</section>
 					<Footer />
