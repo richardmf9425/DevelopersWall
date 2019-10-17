@@ -56,7 +56,7 @@ const Landing = () => {
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt libero aliquid corporis
 							modi odit, veniam officiis ducimus illo error, ad cupiditate dicta enim possimus, quaerat
 							accusantium quo provident quis commodi architecto explicabo sed eveniet. Culpa ea voluptatem
-							eveniet amet possimus?
+							eveniet amet possimus test
 						</p>
 					</div>
 				</div>
