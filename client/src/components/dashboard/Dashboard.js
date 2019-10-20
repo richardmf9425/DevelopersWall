@@ -14,7 +14,7 @@ const Dashboard = ({ getCurrentProfile, auth: { user }, profile: { profile, load
 		<Fragment>
 			<h1 className="large text-primary">Dashboard</h1>
 			<p className="lead">
-				<i className="fs fa-user" /> Welcome {user && user.name}
+				<i className="fas fa-user" /> Welcome {user && user.name}
 			</p>
 		</Fragment>
 	);
