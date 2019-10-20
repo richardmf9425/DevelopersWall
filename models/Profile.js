@@ -11,9 +11,7 @@ const ProfileSchema = new mongoose.Schema({
 	occupation: {
 		type: String
 	},
-	website: {
-		type: String
-	},
+
 	location: {
 		type: String
 	},
