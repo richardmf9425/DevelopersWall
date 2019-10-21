@@ -6,7 +6,7 @@ const ProfileSchema = new mongoose.Schema({
 		ref: 'user'
 	},
 
-	occupation: {
+	level: {
 		type: String,
 		required: true
 	},
@@ -19,7 +19,7 @@ const ProfileSchema = new mongoose.Schema({
 		type: [ String ],
 		required: true
 	},
-	background: {
+	description: {
 		type: String
 	},
 	githubusername: {

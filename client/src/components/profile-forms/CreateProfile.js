@@ -5,10 +5,9 @@ import { connect } from 'react-redux';
 const CreateProfile = (props) => {
 	const [ formData, setFormData ] = useState({
 		location: '',
-		occupation: '',
-
+		level: '',
 		skills: '',
-		background: '',
+		description: '',
 		githubusername: '',
 		twitter: '',
 		linkedin: '',
@@ -17,18 +16,25 @@ const CreateProfile = (props) => {
 
 	const [ displayLinks, toggleDisplayLinks ] = useState(false);
 
-	const { location, occupation, level, skills, background, githubusername, twitter, linkedin, portfolio } = formData;
+	const { location, level, skills, description, githubusername, twitter, linkedin, portfolio } = formData;
+
+	const onChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 	return (
 		<Fragment>
 			<h1 className="large text-primary">Create Your Profile</h1>
 			<p className="lead">
 				<i className="fas fa-user" /> Let's get your profile setup
 			</p>
-			<small>* = required field</small>
+			<small>
+				<span className="red-required">*</span> = required field
+			</small>
 			<form className="form">
 				<div className="form-group">
-					<select name="level">
-						<option value="0">* Select Professional Level / Occupation</option>
+					<label htmlFor="level">
+						<span className="red-required">*</span>
+					</label>
+					<select id="level" name="level" value={level} onChange={(e) => onChange(e)}>
+						<option value="0">Select Professional Level / Occupation</option>
 						<option value="Developer">Developer</option>
 						<option value="Software Engineer">Software Engineer</option>
 						<option value="Junior Developer">Junior Developer</option>
@@ -45,24 +51,51 @@ const CreateProfile = (props) => {
 				</div>
 
 				<div className="form-group">
-					<input type="text" placeholder="Location" name="location" />
+					<input
+						type="text"
+						placeholder="Location"
+						name="location"
+						value={location}
+						onChange={(e) => onChange(e)}
+					/>
 					<small className="form-text">City & state suggested (eg. Boston, MA)</small>
 				</div>
 				<div className="form-group">
-					<input type="text" placeholder="* Skills" name="skills" />
+					<label htmlFor="skills">
+						<span className="red-required">*</span>
+					</label>
+					<input
+						id="skills"
+						type="text"
+						placeholder="Skills"
+						name="skills"
+						value={skills}
+						onChange={(e) => onChange(e)}
+					/>
 					<small className="form-text">
 						Please use comma separated values (eg. HTML,CSS,JavaScript,React) and list them in descending
 						order with the first one being your strongest/preferred.
 					</small>
 				</div>
 				<div className="form-group">
-					<input type="text" placeholder="Github Username" name="githubusername" />
+					<input
+						type="text"
+						placeholder="Github Username"
+						name="githubusername"
+						value={githubusername}
+						onChange={(e) => onChange(e)}
+					/>
 					<small className="form-text">
 						If you want your latest repos and a Github link, include your username
 					</small>
 				</div>
 				<div className="form-group">
-					<textarea placeholder="What makes you unique?!!" name="bio" />
+					<textarea
+						placeholder="What makes you unique?!!"
+						name="description"
+						value={description}
+						onChange={(e) => onChange(e)}
+					/>
 					<small className="form-text">Tell us a little about yourself</small>
 				</div>
 
@@ -77,17 +110,35 @@ const CreateProfile = (props) => {
 					<Fragment>
 						<div className="form-group social-input">
 							<i className="fas fa-link fa-2x" />
-							<input type="text" placeholder="Portfolio URL" name="portfolio-link" />
+							<input
+								type="text"
+								placeholder="Portfolio URL"
+								name="portfolio-link"
+								value={portfolio}
+								onChange={(e) => onChange(e)}
+							/>
 						</div>
 
 						<div className="form-group social-input">
 							<i className="fab fa-twitter fa-2x" />
-							<input type="text" placeholder="Twitter URL" name="twitter" />
+							<input
+								type="text"
+								placeholder="Twitter URL"
+								name="twitter"
+								value={twitter}
+								onChange={(e) => onChange(e)}
+							/>
 						</div>
 
 						<div className="form-group social-input">
 							<i className="fab fa-linkedin fa-2x" />
-							<input type="text" placeholder="Linkedin URL" name="linkedin" />
+							<input
+								type="text"
+								placeholder="Linkedin URL"
+								name="linkedin"
+								value={linkedin}
+								onChange={(e) => onChange(e)}
+							/>
 						</div>
 					</Fragment>
 				)}
