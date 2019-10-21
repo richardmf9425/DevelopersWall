@@ -6,7 +6,7 @@ const CreateProfile = (props) => {
 	const [ formData, setFormData ] = useState({
 		location: '',
 		occupation: '',
-		level: '',
+
 		skills: '',
 		background: '',
 		githubusername: '',
@@ -22,7 +22,7 @@ const CreateProfile = (props) => {
 		<Fragment>
 			<h1 className="large text-primary">Create Your Profile</h1>
 			<p className="lead">
-				<i className="fas fa-user" /> Let's get some information to make your profile stand out
+				<i className="fas fa-user" /> Let's get your profile setup
 			</p>
 			<small>* = required field</small>
 			<form className="form">
@@ -50,7 +50,10 @@ const CreateProfile = (props) => {
 				</div>
 				<div className="form-group">
 					<input type="text" placeholder="* Skills" name="skills" />
-					<small className="form-text">Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)</small>
+					<small className="form-text">
+						Please use comma separated values (eg. HTML,CSS,JavaScript,React) and list them in descending
+						order with the first one being your strongest/preferred.
+					</small>
 				</div>
 				<div className="form-group">
 					<input type="text" placeholder="Github Username" name="githubusername" />
@@ -64,25 +67,30 @@ const CreateProfile = (props) => {
 				</div>
 
 				<div className="my-2">
-					<button type="button" className="btn btn-light">
+					<button onClick={() => toggleDisplayLinks(!displayLinks)} type="button" className="btn btn-light">
 						Add Links
 					</button>
 					<span>Optional</span>
 				</div>
-				<div className="form-group social-input">
-					<i className="fas fa-link fa-2x" />
-					<input type="text" placeholder="Portfolio URL" name="portfolio-link" />
-				</div>
 
-				<div className="form-group social-input">
-					<i className="fab fa-twitter fa-2x" />
-					<input type="text" placeholder="Twitter URL" name="twitter" />
-				</div>
+				{displayLinks && (
+					<Fragment>
+						<div className="form-group social-input">
+							<i className="fas fa-link fa-2x" />
+							<input type="text" placeholder="Portfolio URL" name="portfolio-link" />
+						</div>
 
-				<div className="form-group social-input">
-					<i className="fab fa-linkedin fa-2x" />
-					<input type="text" placeholder="Linkedin URL" name="linkedin" />
-				</div>
+						<div className="form-group social-input">
+							<i className="fab fa-twitter fa-2x" />
+							<input type="text" placeholder="Twitter URL" name="twitter" />
+						</div>
+
+						<div className="form-group social-input">
+							<i className="fab fa-linkedin fa-2x" />
+							<input type="text" placeholder="Linkedin URL" name="linkedin" />
+						</div>
+					</Fragment>
+				)}
 
 				<input type="submit" className="btn btn-primary my-1" />
 				<a className="btn btn-light my-1" href="dashboard.html">

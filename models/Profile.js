@@ -7,16 +7,14 @@ const ProfileSchema = new mongoose.Schema({
 	},
 
 	occupation: {
-		type: String
+		type: String,
+		required: true
 	},
 
 	location: {
 		type: String
 	},
-	level: {
-		type: String,
-		required: true
-	},
+
 	skills: {
 		type: [ String ],
 		required: true
