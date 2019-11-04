@@ -9,4 +9,4 @@ Material-UI
 ## Contributing
 Pull Requests are welcome! For big changes please open a github issue first to discuss your idea.
 
-Also make sure to update any existing tests if needed.
+Also make sure to update any existing tests if needed
